@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>评分系统</title>
+	<link href="style/content.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<script src="bootstrap/js/jQuery.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js">
+	</script>
+	<script type="text/javascript" src="js/calc.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="top-content" >
+			<div id="logo"></div>
+			<div id="desc-text">欢迎来到沧龙三部评分系统</div>
+		</div>
+		<table class="table table-bordered table-hover">
+			<tr>
+				<th>序号</th>
+				<th>1号评委</th>
+				<th>2号评委</th>
+				<th>3号评委</th>
+				<th>4号评委</th>
+				<th>5号评委</th>
+				<th>6号评委</th>
+				<th>7号评委</th>
+				<th>8号评委</th>
+				<th>9号评委</th>
+				<th>10号评委</th>
+				<th>11号评委</th>
+				<th>12号评委</th>
+				<th>最高分</th>
+				<th>最低分</th>
+				<th>平均分</th>
+				<!--<th><center>操作</center></th>-->
+				<th><center>操作</center></th>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td><input type="text" id="one-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="one-person-judge"></td>
+				<td><input type="text" id="three-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="one-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="one-person-judge"/></td>
+				<td id="one-person-max"></td>
+				<td id="one-person-min"></td>
+				<td id="one-person-avg"></td>
+				<td><button  id="btn-one-calc" class="btn btn-info" >&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+			</tr>
+
+			<tr>
+				<td>2</td>
+				<td><input type="text" id="one-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="two-person-judge"></td>
+				<td><input type="text" id="three-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="two-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="two-person-judge"/></td>
+				<td id="two-person-max"></td>
+				<td id="two-person-min"></td>
+				<td id="two-person-avg"></td>
+				<td><button id="btn-two-calc"  class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td><input type="text" id="one-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="three-person-judge"></td>
+				<td><input type="text" id="three-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="three-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="three-person-judge"/></td>
+				<td id="three-person-max"></td>
+				<td id="three-person-min"></td>
+				<td id="three-person-avg"></td>
+				<td><button id="btn-three-calc"  class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+
+			<tr>
+				<td>4</td>
+				<td><input type="text" id="one-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="four-person-judge"></td>
+				<td><input type="text" id="three-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="four-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="four-person-judge"/></td>
+				<td id="four-person-max"></td>
+				<td id="four-person-min"></td>
+				<td id="four-person-avg"></td>
+				<td><button id="btn-four-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+
+			<tr>
+				<td>5</td>
+				<td><input type="text" id="one-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="five-person-judge"></td>
+				<td><input type="text" id="three-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="five-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="five-person-judge"/></td>
+				<td id="five-person-max"></td>
+				<td id="five-person-min"></td>
+				<td id="five-person-avg"></td>
+				<td><button id="btn-five-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+
+			<tr>
+				<td>6</td>
+				<td><input type="text" id="one-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="six-person-judge"></td>
+				<td><input type="text" id="three-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="six-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="six-person-judge"/></td>
+				<td id="six-person-max"></td>
+				<td id="six-person-min"></td>
+				<td id="six-person-avg"></td>
+				<td><button id="btn-six-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+			<tr>
+				<td>7</td>
+				<td><input type="text" id="one-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="seven-person-judge"></td>
+				<td><input type="text" id="three-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="seven-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="seven-person-judge"/></td>
+				<td id="seven-person-max"></td>
+				<td id="seven-person-min"></td>
+				<td id="seven-person-avg"></td>
+				<td><button id="btn-seven-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+			<tr>
+				<td>8</td>
+				<td><input type="text" id="one-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="eight-person-judge"></td>
+				<td><input type="text" id="three-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="eight-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="eight-person-judge"/></td>
+				<td id="eight-person-max"></td>
+				<td id="eight-person-min"></td>
+				<td id="eight-person-avg"></td>
+				<td><button id="btn-eight-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+			<tr>
+				<td>9</td>
+				<td><input type="text" id="one-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="nine-person-judge"></td>
+				<td><input type="text" id="three-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="nine-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="nine-person-judge"/></td>
+				<td id="nine-person-max"></td>
+				<td id="nine-person-min"></td>
+				<td id="nine-person-avg"></td>
+				<td><button id="btn-nine-calc"  class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+			<tr>
+				<td>10</td>
+				<td><input type="text" id="one-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="ten-person-judge"></td>
+				<td><input type="text" id="three-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="ten-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="ten-person-judge"/></td>
+				<td id="ten-person-max"></td>
+				<td id="ten-person-min"></td>
+				<td id="ten-person-avg"></td>
+				<td><button id="btn-ten-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+				
+			</tr>
+			<tr>
+				<td>11</td>
+				<td><input type="text" id="one-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="two-judge" class="eleven-person-judge"></td>
+				<td><input type="text" id="three-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="four-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="five-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="six-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="seven-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="eight-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="nine-judge" class="eleven-person-judge"/></td>
+				<td><input type="text" id="ten-judge" class="eleven-person-judge"/></td>
+				<td id="eleven-person-max"></td>
+				<td id="eleven-person-min"></td>
+				<td id="eleven-person-avg"></td>
+				<td><button id="btn-eleven-calc" class="btn btn-info">&nbsp;&nbsp;计算&nbsp;&nbsp;</button></td>
+			</tr>
+
+		</table>
+	</div>
+</body>
+</html>
